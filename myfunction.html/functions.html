@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions Learning</title>
+</head>
+<body>
+
+<h1>JavaScript Functions Tutorial</h1>
+
+<script type="text/javascript">
+
+// ===== EXAMPLE 1: Simple Function =====
+// Function without parameters (koi input nahi)
+function sayHello() {
+    document.write("Hello! Welcome to JavaScript <br>");
+}
+
+// Function ko call karo (chalao)
+sayHello();
+
+document.write("<br>");
+
+// ===== EXAMPLE 2: Function with Parameters =====
+// Function jo input leta hai
+function add(num1, num2) {
+    var sum = num1 + num2;
+    return sum;  // Result return karo
+}
+
+// Function ko call karo with values
+var result1 = add(5, 3);
+document.write("5 + 3 = " + result1 + "<br>");
+
+var result2 = add(10, 20);
+document.write("10 + 20 = " + result2 + "<br>");
+
+document.write("<br>");
+
+// ===== EXAMPLE 3: Multiply Function =====
+function multiply(a, b) {
+    return a * b;
+}
+
+var result3 = multiply(4, 5);
+document.write("4 * 5 = " + result3 + "<br>");
+
+document.write("<br>");
+
+// ===== EXAMPLE 4: Greet Function =====
+function greet(name) {
+    return "Hello " + name + "! Welcome to coding!";
+}
+
+document.write(greet("Sachin") + "<br>");
+document.write(greet("Ram") + "<br>");
+
+document.write("<br>");
+
+// ===== EXAMPLE 5: Check Even or Odd =====
+function isEven(number) {
+    if (number % 2 == 0) {
+        return "Even";
+    } else {
+        return "Odd";
+    }
+}
+
+document.write("4 is: " + isEven(4) + "<br>");
+document.write("7 is: " + isEven(7) + "<br>");
+
+</script>
+
+</body>
+</html>

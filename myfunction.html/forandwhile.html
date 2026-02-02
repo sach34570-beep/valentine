@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript for and while loop </title>
+</head>
+<body>
+    <script type="text/javascript">
+        // for loop explanation 
+        document.write("For Loop:<br>");
+        for (var i = 0; i < 10; i++) {
+            document.write(i + "<br>");
+        }
+
+        document.write("<br>While Loop:<br>");
+        // while loop explanation
+        var j = 0;
+        while (j < 10) {
+            document.write(j + "<br>");
+            j++;
+        }
+
+        document.write("<br><br>Chapter 2: Conditional Statements (if-else)<br>");
+        // if-else example
+        var age = 18;
+        if (age >= 18) {
+            document.write("You are an adult.<br>");
+        } else {
+            document.write("You are a minor.<br>");
+        }
+
+        var score = 85;
+        if (score >= 90) {
+            document.write("Grade: A<br>");
+        } else if (score >= 80) {
+            document.write("Grade: B<br>");
+        } else {
+            document.write("Grade: C or below<br>");
+        }
+
+        document.write("<br><br>Chapter 3: Arrays<br>");
+        // Array example
+        var fruits = ["Apple", "Banana", "Orange"];
+        document.write("Fruits: " + fruits + "<br>");
+        document.write("First fruit: " + fruits[0] + "<br>");
+        document.write("Number of fruits: " + fruits.length + "<br>");
+
+        // Adding to array
+        fruits.push("Grape");
+        document.write("After adding Grape: " + fruits + "<br>");
+
+        // Looping through array
+        document.write("All fruits:<br>");
+        for (var k = 0; k < fruits.length; k++) {
+            document.write("- " + fruits[k] + "<br>");
+        }
+    </script>
+    
+</body>
+</html>
